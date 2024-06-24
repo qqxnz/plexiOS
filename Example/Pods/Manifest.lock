@@ -2,7 +2,9 @@ PODS:
   - CocoaAsyncSocket (7.6.5)
   - plexiOS (0.1.0):
     - CocoaAsyncSocket
+    - Reachability
     - YYModel
+  - Reachability (3.7.6)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -11,6 +13,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - CocoaAsyncSocket
+    - Reachability
     - YYModel
 
 EXTERNAL SOURCES:
@@ -19,7 +22,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  plexiOS: 6c51c24b545cead77ff12340091be76089360133
+  plexiOS: 56cab1addbdae278378ec4a56baa27a9ba408d57
+  Reachability: fd0ecd23705e2599e4cceeb943222ae02296cbc6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 284699909df3a4ab5a09e99bbd732d47526b5aa3

@@ -44,10 +44,10 @@ class PlexTCPService: NSObject {
 extension PlexTCPService: GCDAsyncSocketDelegate {
     func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         print("Connected to \(host):\(port)")
-        let message = PlexMessage.init(uri: "/auth/server", body: "22")
+        let message = PlexMessage.authServer(body: "223")
         sendMessage(message: message)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            let message = PlexMessage.init(uri: "/heartbeat", body: "")
+            let message = PlexMessage.heartbeat()
             self.sendMessage(message: message)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
