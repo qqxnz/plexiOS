@@ -1,0 +1,6 @@
+framework module plexiOS {
+  umbrella header "plexiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

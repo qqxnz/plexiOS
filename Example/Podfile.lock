@@ -1,0 +1,27 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - plexiOS (0.1.0):
+    - CocoaAsyncSocket
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - plexiOS (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - YYModel
+
+EXTERNAL SOURCES:
+  plexiOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  plexiOS: 6c51c24b545cead77ff12340091be76089360133
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 284699909df3a4ab5a09e99bbd732d47526b5aa3
+
+COCOAPODS: 1.15.2

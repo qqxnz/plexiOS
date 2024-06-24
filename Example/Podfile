@@ -1,0 +1,24 @@
+use_frameworks!
+
+platform :ios, '12.0'
+
+target 'plexiOS_Example' do
+  pod 'plexiOS', :path => '../'
+
+  
+  post_install do |installer|
+    # 设置XCODE 14 组件签名
+    installer.generated_projects.each do |project|
+      project.build_configurations.each do |config|
+#        fix_config(config)
+      end
+      project.targets.each do |target|
+        target.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+#          fix_config(config)
+        end
+      end
+    end
+  end
+  
+end

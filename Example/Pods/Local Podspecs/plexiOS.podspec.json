@@ -1,0 +1,30 @@
+{
+  "name": "plexiOS",
+  "version": "0.1.0",
+  "summary": "A short description of plexiOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lv/plexiOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lv": "fumei@enai.im"
+  },
+  "source": {
+    "git": "https://github.com/lv/plexiOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "plexiOS/Classes/**/*",
+  "dependencies": {
+    "CocoaAsyncSocket": [
+
+    ],
+    "YYModel": [
+
+    ]
+  }
+}
