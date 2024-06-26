@@ -8,32 +8,6 @@
 import UIKit
 import Reachability
 
-
-
-open class PlexManager: NSObject {
-    public static let shared = PlexManager()
-    let client = PlexTCPService.shared
-    private var reachbility:Reachability?
-    private(set) var internetStatus:PlexInternetStatus = .None
-    
-    public override init() {
-        super.init()
-        internetAddObserver()
-    }
-    
-    open func connent(){
-
-        
-        client.connectToHost(host: "117.50.198.225", onPort: 9578)
-//        DispatchQueue.main.async {
-//            self.client.sendMessage(message: "AAAABBBB")
-//        }
-    }
-    
-}
-
-
-
 @objc enum PlexInternetStatus:Int {
     /// 未知
     case None = 0
@@ -43,6 +17,52 @@ open class PlexManager: NSObject {
     case WiFi
     /// 移动网络
     case WWAN
+}
+
+
+@objcMembers public class PlexManager: NSObject {
+    public static let shared = PlexManager()
+    private let tcpService = PlexTCPService()
+    private var reachbility:Reachability?
+    private(set) var internetStatus:PlexInternetStatus = .None
+    
+    public override init() {
+        super.init()
+        tcpService.delegate = self
+        internetAddObserver()
+    }
+    
+    public func connent(){
+//        client.connectToHost(host: "172.16.5.142", onPort: 3000)
+        
+        tcpService.connectToHost("117.50.198.225", onPort: 9578)
+//        DispatchQueue.main.async {
+//            self.client.sendMessage(message: "AAAABBBB")
+//        }
+    }
+    
+    /// 是否显示日志
+    /// - Parameter show: true=显示
+    public func showLog(_ show:Bool){
+        PlexLog.showLog = show
+    }
+    
+}
+
+extension PlexManager: PlexTCPServiceDelegate {
+    func tcpConnected(_ tcp: PlexTCPService, toHost host: String, port: UInt16) {
+        
+    }
+    
+    func tcpConnectFail(_ tcp: PlexTCPService, withError error: (any Error)?) {
+        
+    }
+    
+    func tcpDisconnect(_ tcp: PlexTCPService, withError error: (any Error)?) {
+        
+    }
+    
+    
 }
 
 

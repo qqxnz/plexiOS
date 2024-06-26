@@ -32,6 +32,7 @@
 		9CB15A7F8A11ED0F4EAA967CD97FA581 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA0BD777CB47EE011E4D022283D0AA /* Reachability.m */; };
 		A598F2F5AC9E77E1C74555965089EA93 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0653BC1878FD95DD40B671D6FDAA38 /* SystemConfiguration.framework */; };
 		A6B568E8E82F0A9801DE9D727D36C5C8 /* PlexTCPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFBF255E516D73D2DA07255023AE86F /* PlexTCPService.swift */; };
+		A9045E512C2C082700A11A89 /* PlexLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045E502C2C082700A11A89 /* PlexLog.swift */; };
 		AA4F5F3D3EA4A0A4A41EF5A75DA59114 /* PlexMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3736D70242660E37DA58580F7C947E2 /* PlexMessage.swift */; };
 		B19D3C79B36157522E7662E737D558EF /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DF86FD315EA247B644C5F4865D96B6 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE771A84869C2A311C50058EE38CD1EA /* Reachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E432F694A015EEE9A8CA062B84B4DB34 /* Reachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,7 +110,7 @@
 		0F4B54A5FB9F64A99C2F7278FB1752DF /* Pods-plexiOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-plexiOS_Example"; path = Pods_plexiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		130866E969806373292CD2893ABB74E9 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
 		1B0A0C97D9EB746175E24992056F832B /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
-		28F04C67267CA2067FD5A8215F986E91 /* plexiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = plexiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		28F04C67267CA2067FD5A8215F986E91 /* plexiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = plexiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29A3EE0BD9672D713127C9C70885FF35 /* Pods-plexiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-plexiOS_Example.modulemap"; sourceTree = "<group>"; };
 		29AAE124B8C43987CC018C2BF8B7262A /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
 		2B8E0791C4A1EF70BFB60DC793A28F0C /* PlexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexManager.swift; path = plexiOS/Classes/PlexManager.swift; sourceTree = "<group>"; };
@@ -135,16 +136,17 @@
 		83926DC7B6C1F70577A7515E90402C74 /* Pods-plexiOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plexiOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		84AD49B5F2DE2921A3828C75200AB27D /* YYModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.release.xcconfig; sourceTree = "<group>"; };
 		8B02A1784BCD9F2FB895B8869941EB97 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
-		8D89A3F255FCF2F7A1E8CB51FC028FD7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Framework/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8D89A3F255FCF2F7A1E8CB51FC028FD7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Framework/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		8E6D66853377D9B0BCED8F8F036C8519 /* plexiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = plexiOS.release.xcconfig; sourceTree = "<group>"; };
 		933CA05F05B9DE437C759110993DD4BB /* plexiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "plexiOS-umbrella.h"; sourceTree = "<group>"; };
 		93EAF35E03FA6EE0D424560FD12DC284 /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Reachability.modulemap; sourceTree = "<group>"; };
-		98E9914FABC63ACC2BB20289457B060C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		98E9914FABC63ACC2BB20289457B060C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9B9EBDC06B1FE260282FD6E8353A4A9C /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		9C790031091DE803708458F1E194E74F /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
-		9D048E23164C771E3F8F43D1C5D25EF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D048E23164C771E3F8F43D1C5D25EF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0F273957044D7BA46636F15440B3A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A9045E502C2C082700A11A89 /* PlexLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexLog.swift; sourceTree = "<group>"; };
 		A9B41E4547A086E8459B5DEAB9B4DB81 /* plexiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "plexiOS-dummy.m"; sourceTree = "<group>"; };
 		ACA4FB6B9E2CA7BC1F67EA2B01968C32 /* Reachability-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Reachability-Info.plist"; sourceTree = "<group>"; };
 		AF10B6B611994A075334E34F7EA338DE /* Pods-plexiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plexiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			children = (
 				2B8E0791C4A1EF70BFB60DC793A28F0C /* PlexManager.swift */,
 				E3736D70242660E37DA58580F7C947E2 /* PlexMessage.swift */,
+				A9045E502C2C082700A11A89 /* PlexLog.swift */,
 				DCFBF255E516D73D2DA07255023AE86F /* PlexTCPService.swift */,
 				0BB02A2C6D834537BCDB9B4713A48AD3 /* Pod */,
 				3F60235F7FFF27FEE2B8650DD1034BFB /* Support Files */,
@@ -324,7 +327,6 @@
 				080011ACF63D6B83147BBAA6BBE73200 /* GCDAsyncUdpSocket.m */,
 				65D1C9B3C93C383BD28BDBC77F30E21F /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -336,7 +338,6 @@
 				B1B5F9BF2AFC7DF0787176D4DA1652D8 /* Resources */,
 				CB4E4B63A673E2E2AA9CFDA9405252EC /* Support Files */,
 			);
-			name = Reachability;
 			path = Reachability;
 			sourceTree = "<group>";
 		};
@@ -350,7 +351,6 @@
 				420DF89F758A246ED86F93BFA4026081 /* YYModel.h */,
 				9629BD8EF0B3848D15B89C6F53B7C7D7 /* Support Files */,
 			);
-			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -702,6 +702,7 @@
 				C616DCE89093F3E6595E5FAC0BB8ECA1 /* plexiOS-dummy.m in Sources */,
 				4DD273D0FA76B95E253D54E44688EA55 /* PlexManager.swift in Sources */,
 				AA4F5F3D3EA4A0A4A41EF5A75DA59114 /* PlexMessage.swift in Sources */,
+				A9045E512C2C082700A11A89 /* PlexLog.swift in Sources */,
 				A6B568E8E82F0A9801DE9D727D36C5C8 /* PlexTCPService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1039,8 +1040,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

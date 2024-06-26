@@ -8,13 +8,18 @@
 import UIKit
 import YYModel
 
-
-@objcMembers class PlexMessage: NSObject {
-
+@objcMembers public class PlexMessage: NSObject {
+    
+    static let messageHead:Int = -100
+    static let messageBody:Int = -101
     
     private(set) var seq:Int64 = 0
     private(set) var uri:String = ""
     private(set) var body:String = ""
+    
+    static func withJSONString(_ json:String) -> PlexMessage?{
+       return PlexMessage.yy_model(withJSON: json)
+    }
     
     static func modelCustomPropertyMapper() -> [String : Any]? {
         return [:]
@@ -43,10 +48,20 @@ import YYModel
 
 
 extension PlexMessage {
+    
+    /// 心跳
+    static let heartbeatUri = "/heartbeat"
+    /// 认证
+    static let authServerUri = "/auth/server"
+    /// 认证成功
+    static let authSuccessUri = "/auth/success"
+    
+    
     static func heartbeat()-> PlexMessage{
-        return PlexMessage.init(uri: "/heartbeat", body: "")
+        return PlexMessage.init(uri: heartbeatUri, body: "")
     }
+    
     static func authServer(body:String)-> PlexMessage{
-        return PlexMessage.init(uri: "/auth/server", body: body)
+        return PlexMessage.init(uri: authServerUri, body: body)
     }
 }

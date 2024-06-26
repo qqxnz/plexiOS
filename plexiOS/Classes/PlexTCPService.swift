@@ -8,26 +8,46 @@
 import UIKit
 import CocoaAsyncSocket
 
+@objc protocol PlexTCPServiceDelegate:NSObjectProtocol {
+    /// 连接服务器成功
+    /// - Parameters:
+    ///   - tcp: 连接对象
+    ///   - host: 服务器IP
+    ///   - port: 服务器端口
+    func tcpConnected(_ tcp:PlexTCPService,toHost host: String, port: UInt16)
+    /// 连接服务器失败
+    /// - Parameters:
+    ///   - tcp: 连接对象
+    ///   - error: 错误信息
+    func tcpConnectFail(_ tcp:PlexTCPService,withError error: Error?)
+    /// 与服务器断开连接
+    /// - Parameters:
+    ///   - tcp: 连接对象
+    ///   - error: 错误信息
+    func tcpDisconnect(_ tcp:PlexTCPService,withError error: Error?)
+}
 
-
-class PlexTCPService: NSObject {
-    static let shared = PlexTCPService()
-    var socket: GCDAsyncSocket!
-    let queue = DispatchQueue(label: "plex.socket")
+@objcMembers class PlexTCPService: NSObject {
+    let socket = GCDAsyncSocket()
+    let queue = DispatchQueue(label: "plexiOS.tcp")
+    
+    weak var delegate:PlexTCPServiceDelegate?
+    
     override init() {
         super.init()
-        self.socket = GCDAsyncSocket(delegate: self, delegateQueue: queue)
+        self.socket.setDelegate(self, delegateQueue: self.queue)
     }
 
-    func connectToHost(host: String, onPort port: UInt16) {
+    func connectToHost(_ host: String, onPort port: UInt16) {
         do {
-            try socket.connect(toHost: host, onPort: port, withTimeout: 30.0)
+            try socket.connect(toHost: host, onPort: port, withTimeout: 5.0)//TODO: 超时时间
         } catch let error {
-            print("Error connecting: \(error.localizedDescription)")
+            PlexLog.showError("Error connecting: \(error.localizedDescription)")
+            self.delegate?.tcpConnectFail(self, withError: error)
         }
     }
 
-    func sendMessage(message: PlexMessage) {
+    func sendMessage(_ message: PlexMessage) {
         self.queue.async {
             let data = message.toJSON().data(using: .utf8)!
             // 消息长度
@@ -35,44 +55,66 @@ class PlexTCPService: NSObject {
             let lengthData = Data(bytes: &messageLength, count: MemoryLayout<UInt32>.size)
             
             // 先发送消息长度
-            self.socket.write(lengthData, withTimeout: -1, tag: 0)
-            self.socket.write(data, withTimeout: -1, tag: 0)
+            self.socket.write(lengthData, withTimeout: -1, tag: PlexMessage.messageHead)
+            self.socket.write(data, withTimeout: -1, tag: PlexMessage.messageBody)
+        }
+    }
+    
+    private func receiveMessage(_ message: PlexMessage){
+        if message.uri == PlexMessage.heartbeatUri {//跳包
+            
+        }else if message.uri == PlexMessage.authSuccessUri {
+            
         }
     }
 }
 
 extension PlexTCPService: GCDAsyncSocketDelegate {
     func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
-        print("Connected to \(host):\(port)")
-        let message = PlexMessage.authServer(body: "223")
-        sendMessage(message: message)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            let message = PlexMessage.heartbeat()
-            self.sendMessage(message: message)
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            let message = PlexMessage.init(uri: "/logic/test", body: "test")
-            self.sendMessage(message: message)
-        }
+        PlexLog.showInfo("Connected ->\(host):\(port)")
+        self.delegate?.tcpConnected(self, toHost: host, port: port)
+        self.socket.readData(toLength: UInt(MemoryLayout<UInt32>.size), withTimeout: -1, tag: PlexMessage.messageHead)
+//        let message = PlexMessage.authServer(body: "223")
+//        sendMessage(message)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+//            let message = PlexMessage.heartbeat()
+//            self.sendMessage(message)
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+//            let message = PlexMessage.init(uri: "/logic/test", body: "test")
+//            self.sendMessage(message)
+//        }
     }
 
     func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
-        print("Data sent \(tag)")
+        PlexLog.showInfo("Send Data Success ->\(tag)")
     }
 
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
-        print("didRead\(data.count)    tag:\(tag)")
-        if let message = String(data: data, encoding: .utf8) {
-            print("Received: \(message)")
-            // 根据需要处理收到的消息
+        if tag == PlexMessage.messageHead {//消息头
+            let messageLength = data.withUnsafeBytes { $0.load(as: UInt32.self).bigEndian }
+            PlexLog.showInfo("Received Head: data body length --> \(messageLength)")
+            self.socket.readData(toLength: UInt(messageLength), withTimeout: -1, tag: PlexMessage.messageBody)
+        }else{
+            if let json = String(data: data, encoding: .utf8) {
+                PlexLog.showInfo("Received Body:\(json)")
+                if let message = PlexMessage.withJSONString(json) {
+                    receiveMessage(message)
+                }else{
+                    PlexLog.showError("Received Body Parsing Failed")
+                }
+            }
+            self.socket.readData(toLength: UInt(MemoryLayout<UInt32>.size), withTimeout: -1, tag: PlexMessage.messageHead)
         }
+
     }
 
     func socketDidDisconnect(_ sock: GCDAsyncSocket, withError error: Error?) {
         if let error = error {
-            print("Disconnected with error: \(error.localizedDescription)")
+            PlexLog.showError("Disconnected with error: \(error.localizedDescription)")
         } else {
-            print("Disconnected")
+            PlexLog.showWarn("Disconnected")
         }
+        self.delegate?.tcpDisconnect(self, withError: error)
     }
 }
