@@ -55,6 +55,8 @@ extension PlexMessage {
     static let authServerUri = "/auth/server"
     /// 认证成功
     static let authSuccessUri = "/auth/success"
+    /// 认证失败
+    static let authFailedUri = "/auth/failed"
     
     
     static func heartbeat()-> PlexMessage{
