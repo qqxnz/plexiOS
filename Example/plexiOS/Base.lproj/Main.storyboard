@@ -28,16 +28,73 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONQ-1g-Ss2">
+                                <rect key="frame" x="0.0" y="200" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dPY-cb-F7U"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="开始连接">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startBtnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e4R-Qi-qpP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT1-nz-App">
+                                <rect key="frame" x="0.0" y="260" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IAc-MW-wNz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="断开连接">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopBtnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="alD-VX-Exp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-uE-7PC">
+                                <rect key="frame" x="0.0" y="320" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mRW-oc-gLK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="重新连接">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="reBtnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DWj-AX-q3K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rT1-nz-App" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6m1-tV-6DQ"/>
+                            <constraint firstAttribute="trailing" secondItem="rT1-nz-App" secondAttribute="trailing" id="CIc-YG-U3C"/>
                             <constraint firstItem="gEn-TM-sWl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="J2p-9V-1RD"/>
+                            <constraint firstItem="ONQ-1g-Ss2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JIU-OB-BgL"/>
+                            <constraint firstItem="Fzc-uE-7PC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="R5t-rX-evi"/>
+                            <constraint firstAttribute="trailing" secondItem="Fzc-uE-7PC" secondAttribute="trailing" id="Z7q-9D-XVf"/>
+                            <constraint firstAttribute="trailing" secondItem="ONQ-1g-Ss2" secondAttribute="trailing" id="Zg3-63-g6P"/>
+                            <constraint firstItem="Fzc-uE-7PC" firstAttribute="top" secondItem="rT1-nz-App" secondAttribute="bottom" id="aDd-1u-nsI"/>
                             <constraint firstAttribute="trailing" secondItem="gEn-TM-sWl" secondAttribute="trailing" id="bfW-su-ghb"/>
+                            <constraint firstItem="rT1-nz-App" firstAttribute="top" secondItem="ONQ-1g-Ss2" secondAttribute="bottom" id="dNU-Iu-xIa"/>
+                            <constraint firstItem="ONQ-1g-Ss2" firstAttribute="top" secondItem="gEn-TM-sWl" secondAttribute="bottom" id="fe1-GI-zAh"/>
                             <constraint firstItem="gEn-TM-sWl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="uh0-xf-03M"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="reBtn" destination="Fzc-uE-7PC" id="nYQ-UN-GoZ"/>
+                        <outlet property="startBtn" destination="ONQ-1g-Ss2" id="23W-J2-vEo"/>
                         <outlet property="statusLab" destination="gEn-TM-sWl" id="cNj-U8-8Tu"/>
+                        <outlet property="stopBtn" destination="rT1-nz-App" id="mn6-Dx-jMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -45,4 +102,15 @@
             <point key="canvasLocation" x="-26.399999999999999" y="-36.431784107946029"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

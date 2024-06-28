@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B0C64F6944D4297808D299404F7DF0 /* PlexLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B9CAF33DF47120BA418B360E2B008 /* PlexLog.swift */; };
 		0633B30CB31677ADCFC32363A3A6F266 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BD74FA5938B67F2DF331AC537CE25E /* YYModel-dummy.m */; };
 		078D164AF2BF302BCC15624AC64D93B4 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9EBDC06B1FE260282FD6E8353A4A9C /* NSObject+YYModel.m */; };
 		0A3B708E06FB259D11F696EEE4E7624A /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF3692024D31DE9E35F1D7044620B9E /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B628415A4E59485C470DF70959C8BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */; };
+		0F6240561F25E45E7A9363337AF5798A /* plexiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7616B3C2E2786143B6833EFCFFA615C5 /* plexiOS-dummy.m */; };
 		12F482FE2022286A223FFC9BFA84F83A /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DEA5BED57903F57FF06355044FEFFB /* CocoaAsyncSocket-dummy.m */; };
 		26F87A3DC73299D66231DFE835E9C13D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */; };
 		33A88215D5655DDBF56DEAA41CC8D8DA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A7CD1FFF0972509A12B9927C7C00E5 /* CFNetwork.framework */; };
 		37B0BF2484BE142772F5429AEE5CF0B1 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 080011ACF63D6B83147BBAA6BBE73200 /* GCDAsyncUdpSocket.m */; };
 		3D87E56E6333E8F918011A931994E4FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */; };
+		460C7787977E17B25AC3B80DCD9D1EB0 /* PlexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5DB475F6B043ABE82AF0A3CFC0FD47 /* PlexManager.swift */; };
 		4AD6CE40DAE2F152D7B323DC8DA22F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */; };
 		4C1040607BA8840B4AA017519A80B764 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17F0ABC0F40DCD2C30AD85F1F4CEAD7 /* CoreFoundation.framework */; };
-		4DD273D0FA76B95E253D54E44688EA55 /* PlexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E0791C4A1EF70BFB60DC793A28F0C /* PlexManager.swift */; };
 		4FC2272F4C11472C903CFCC6A101313E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3543CA73F2D161142CCAB4DD3D2D5943 /* GCDAsyncSocket.m */; };
 		586AD390C3E7E077D8FB1DD04B0B4E30 /* Pods-plexiOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAB59D41644E131EE818A47038A2D35 /* Pods-plexiOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58ED1F12E5C11B75284BFE58090C625A /* plexiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 933CA05F05B9DE437C759110993DD4BB /* plexiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		648E37F0F1A0CFD62138D51579F1661D /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 130866E969806373292CD2893ABB74E9 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64AA4AB480F179CBF45331F6C6D08B27 /* plexiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F914014C6C29427C16352DF358D722C /* plexiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67A4DC4B4DB5321811BC3D3627AE855E /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4AC1B2CD9B1A95E6F97A516498A7AB /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73141686A3485767BAB069E13F62EC27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */; };
 		75437D42CE4C948219C10A7B03AA8521 /* Pods-plexiOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED142B5F2AB8502EBDA852D5C34875BA /* Pods-plexiOS_Example-dummy.m */; };
 		7C1DD31A3A7A0FBBA1A9C88A92CAA28C /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE5FDDCF1B24D3258A9E01E89829FBA /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EB2A2C15E87A8FB4F8C0CB2E13CA716 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8D89A3F255FCF2F7A1E8CB51FC028FD7 /* PrivacyInfo.xcprivacy */; };
+		7FDD64D358AAC338BBD817E616B22939 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8D89A3F255FCF2F7A1E8CB51FC028FD7 /* PrivacyInfo.xcprivacy */; };
 		8695D4A73E237B5CE2F6747C6055A295 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E06697647FBD5A6B1D7C2FF9C207E9AD /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8861DA09219E12C0A1DBA07EB1CEB94A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0F273957044D7BA46636F15440B3A8 /* Security.framework */; };
 		9CB15A7F8A11ED0F4EAA967CD97FA581 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA0BD777CB47EE011E4D022283D0AA /* Reachability.m */; };
 		A598F2F5AC9E77E1C74555965089EA93 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0653BC1878FD95DD40B671D6FDAA38 /* SystemConfiguration.framework */; };
-		A6B568E8E82F0A9801DE9D727D36C5C8 /* PlexTCPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFBF255E516D73D2DA07255023AE86F /* PlexTCPService.swift */; };
-		A9045E512C2C082700A11A89 /* PlexLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045E502C2C082700A11A89 /* PlexLog.swift */; };
-		AA4F5F3D3EA4A0A4A41EF5A75DA59114 /* PlexMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3736D70242660E37DA58580F7C947E2 /* PlexMessage.swift */; };
 		B19D3C79B36157522E7662E737D558EF /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DF86FD315EA247B644C5F4865D96B6 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40988B374C0960E8DEB46C5F097FD73 /* PlexTCPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A482C839E0DB609CB14721E0189C01 /* PlexTCPService.swift */; };
+		B9566EAFA7AC8D23EBAA3CA63963B7B8 /* PlexMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF25C617557F7FE9B0459CA1BEF9FC /* PlexMessage.swift */; };
 		BE771A84869C2A311C50058EE38CD1EA /* Reachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E432F694A015EEE9A8CA062B84B4DB34 /* Reachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C39E6FC8256EDCE5AF1E1E670FA77B71 /* Reachability-Reachability_Privacy in Resources */ = {isa = PBXBuildFile; fileRef = DFC89BE171DE7E648C53797695D8A220 /* Reachability-Reachability_Privacy */; };
-		C616DCE89093F3E6595E5FAC0BB8ECA1 /* plexiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B41E4547A086E8459B5DEAB9B4DB81 /* plexiOS-dummy.m */; };
 		DC6895B7C969323F8573A10CDD547208 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 715D35B60F0FD87430596823F736079D /* YYClassInfo.m */; };
 		E2E7EC700C96B11FFFCCE7526E302150 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */; };
 		EBE49189B9725BE13038660CCD232C04 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B02A1784BCD9F2FB895B8869941EB97 /* Reachability-dummy.m */; };
@@ -46,125 +46,125 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2CE14925259C487556C2277C77889EF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
-			remoteInfo = YYModel;
-		};
-		62CA88AE923DA251ED0E0821BF0E17FA /* PBXContainerItemProxy */ = {
+		05B1DFB6E6C28D2C883C3355A4BC98C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
 			remoteInfo = Reachability;
 		};
-		8FE291E53C3157A2983E340669AC9642 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		AFD294A6C051AF39297A1BB39C3E1B40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		B0057B8049140DC75B0D2547F324AC40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
-			remoteInfo = Reachability;
-		};
-		DB85795B56C59F8E7DD5A69BA4C05CD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 944BA35E5D9EFBB4C65957B699260A17;
-			remoteInfo = plexiOS;
-		};
-		DF9ACC81D5AEA00EB0D0D3C1D9C2EF07 /* PBXContainerItemProxy */ = {
+		0F7B7021EF8E6AF3EDDB98B6E752434B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
 			remoteInfo = YYModel;
 		};
-		FC997C38CBE676D805B957B8AFB229E0 /* PBXContainerItemProxy */ = {
+		4890622960A375BE5A87B6AB154A9BEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2787856C227A709315E3C9C4355A440;
 			remoteInfo = "Reachability-Reachability_Privacy";
 		};
+		63711449B1C5CE62D02FABE737F186DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
+			remoteInfo = Reachability;
+		};
+		B99A318377E0FEDAFC0CCF69AFD30113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 944BA35E5D9EFBB4C65957B699260A17;
+			remoteInfo = plexiOS;
+		};
+		BA897C53046295CD30CBBFE6583F02A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		C883F837FDA52F9DA45989E9DAE4E4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		EB7488933DC0A61F211B4F7FED857A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07E6CF0248A3662C0A91C2EDE9F5D908 /* plexiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = plexiOS.debug.xcconfig; sourceTree = "<group>"; };
 		080011ACF63D6B83147BBAA6BBE73200 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		09CD7F3A92E8296648E7DF4AF9447C98 /* Pods-plexiOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-plexiOS_Example-Info.plist"; sourceTree = "<group>"; };
 		0F4B54A5FB9F64A99C2F7278FB1752DF /* Pods-plexiOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-plexiOS_Example"; path = Pods_plexiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		130866E969806373292CD2893ABB74E9 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
+		13F3EA521F29B81722CB5156BA1313C0 /* plexiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "plexiOS-Info.plist"; sourceTree = "<group>"; };
 		1B0A0C97D9EB746175E24992056F832B /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
-		28F04C67267CA2067FD5A8215F986E91 /* plexiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = plexiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29A3EE0BD9672D713127C9C70885FF35 /* Pods-plexiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-plexiOS_Example.modulemap"; sourceTree = "<group>"; };
 		29AAE124B8C43987CC018C2BF8B7262A /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
-		2B8E0791C4A1EF70BFB60DC793A28F0C /* PlexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexManager.swift; path = plexiOS/Classes/PlexManager.swift; sourceTree = "<group>"; };
 		32663A917754EA8AC88BE426697AB421 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
 		33CA0BD777CB47EE011E4D022283D0AA /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3543CA73F2D161142CCAB4DD3D2D5943 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		3E0653BC1878FD95DD40B671D6FDAA38 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		3F914014C6C29427C16352DF358D722C /* plexiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "plexiOS-umbrella.h"; sourceTree = "<group>"; };
 		400FF55D0451E7A8F33A3D0D3E11C1B9 /* Reachability */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DF86FD315EA247B644C5F4865D96B6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		420DF89F758A246ED86F93BFA4026081 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
 		422B5902057D74D2AE35D403A5FF06F2 /* Pods-plexiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plexiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		45EFC3676EFEC03F940EE7A89D9EAE5C /* Pods-plexiOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-plexiOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4EE5FDDCF1B24D3258A9E01E89829FBA /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		505AA2BD19A1E0C891DAE4422A7D8141 /* plexiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = plexiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52A16A5C5672D97D983D4FCA0AAEE6C1 /* plexiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = plexiOS.release.xcconfig; sourceTree = "<group>"; };
 		6097C9B4583BA083866B4B3F94C972B7 /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
 		649AD617EDE425D45CF1BA0F1D204930 /* plexiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = plexiOS; path = plexiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BD74FA5938B67F2DF331AC537CE25E /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
-		6A94C0C89BB6D5FDF7260AFE2BAA3FA6 /* plexiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "plexiOS-Info.plist"; sourceTree = "<group>"; };
 		6B566CD08A018091DBDF0F07066D0596 /* YYModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYModel-Info.plist"; sourceTree = "<group>"; };
 		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		715D35B60F0FD87430596823F736079D /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
-		76BF2B5EA16E44204373BC994332160E /* plexiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = plexiOS.modulemap; sourceTree = "<group>"; };
+		74A482C839E0DB609CB14721E0189C01 /* PlexTCPService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexTCPService.swift; path = plexiOS/Classes/PlexTCPService.swift; sourceTree = "<group>"; };
+		7616B3C2E2786143B6833EFCFFA615C5 /* plexiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "plexiOS-dummy.m"; sourceTree = "<group>"; };
 		785817BD8E8277274065F01E53793DE0 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		7E5DB475F6B043ABE82AF0A3CFC0FD47 /* PlexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexManager.swift; path = plexiOS/Classes/PlexManager.swift; sourceTree = "<group>"; };
 		83926DC7B6C1F70577A7515E90402C74 /* Pods-plexiOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plexiOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		84AD49B5F2DE2921A3828C75200AB27D /* YYModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.release.xcconfig; sourceTree = "<group>"; };
 		8B02A1784BCD9F2FB895B8869941EB97 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
-		8D89A3F255FCF2F7A1E8CB51FC028FD7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Framework/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		8E6D66853377D9B0BCED8F8F036C8519 /* plexiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = plexiOS.release.xcconfig; sourceTree = "<group>"; };
-		933CA05F05B9DE437C759110993DD4BB /* plexiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "plexiOS-umbrella.h"; sourceTree = "<group>"; };
+		8D89A3F255FCF2F7A1E8CB51FC028FD7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Framework/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		93EAF35E03FA6EE0D424560FD12DC284 /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Reachability.modulemap; sourceTree = "<group>"; };
-		98E9914FABC63ACC2BB20289457B060C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9AF78BE58B42FB9A206C65BE4396F1BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9B9EBDC06B1FE260282FD6E8353A4A9C /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		9C790031091DE803708458F1E194E74F /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
-		9D048E23164C771E3F8F43D1C5D25EF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0F273957044D7BA46636F15440B3A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		A9045E502C2C082700A11A89 /* PlexLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexLog.swift; sourceTree = "<group>"; };
-		A9B41E4547A086E8459B5DEAB9B4DB81 /* plexiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "plexiOS-dummy.m"; sourceTree = "<group>"; };
+		9EC11918E1F991AA57B45BF66AE75600 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		ACA4FB6B9E2CA7BC1F67EA2B01968C32 /* Reachability-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Reachability-Info.plist"; sourceTree = "<group>"; };
 		AF10B6B611994A075334E34F7EA338DE /* Pods-plexiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plexiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B03A29FC8F57F429666896F0A4D3128E /* plexiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = plexiOS.debug.xcconfig; sourceTree = "<group>"; };
+		C19B9CAF33DF47120BA418B360E2B008 /* PlexLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexLog.swift; path = plexiOS/Classes/PlexLog.swift; sourceTree = "<group>"; };
 		C3A7CD1FFF0972509A12B9927C7C00E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		C6EEE590432137948D49DDAC52D70EE2 /* ResourceBundle-Reachability_Privacy-Reachability-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Reachability_Privacy-Reachability-Info.plist"; sourceTree = "<group>"; };
+		C9696B5A308B2C7E47BDAB372431C054 /* plexiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = plexiOS.modulemap; sourceTree = "<group>"; };
 		CB2BC9242F601283E5D5087D27904F8A /* YYModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.debug.xcconfig; sourceTree = "<group>"; };
 		CD3F3D828CBD12D0B25CCE38A8C04017 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CD4AC1B2CD9B1A95E6F97A516498A7AB /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		CEF3692024D31DE9E35F1D7044620B9E /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		D17F0ABC0F40DCD2C30AD85F1F4CEAD7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		DCFBF255E516D73D2DA07255023AE86F /* PlexTCPService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexTCPService.swift; path = plexiOS/Classes/PlexTCPService.swift; sourceTree = "<group>"; };
 		DF64C52D44766CFCBAC9B0DEE101E6CF /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
 		DFC89BE171DE7E648C53797695D8A220 /* Reachability-Reachability_Privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Reachability-Reachability_Privacy"; path = Reachability_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06697647FBD5A6B1D7C2FF9C207E9AD /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
-		E3736D70242660E37DA58580F7C947E2 /* PlexMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexMessage.swift; path = plexiOS/Classes/PlexMessage.swift; sourceTree = "<group>"; };
 		E432F694A015EEE9A8CA062B84B4DB34 /* Reachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-umbrella.h"; sourceTree = "<group>"; };
 		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BF25C617557F7FE9B0459CA1BEF9FC /* PlexMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlexMessage.swift; path = plexiOS/Classes/PlexMessage.swift; sourceTree = "<group>"; };
 		E5DEA5BED57903F57FF06355044FEFFB /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
 		E88E04F258C2B305A4B7AB29AD59B634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED142B5F2AB8502EBDA852D5C34875BA /* Pods-plexiOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-plexiOS_Example-dummy.m"; sourceTree = "<group>"; };
@@ -172,19 +172,11 @@
 		EE12BF0A2BF1B63BBA65E022AD967E6B /* Pods-plexiOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-plexiOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EF5A556C9ACE1810090884E54D2201D2 /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
 		F2523DF14412473ABC7E94C4A6CC5D63 /* Reachability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.debug.xcconfig; sourceTree = "<group>"; };
-		FF5C77F9816065E99A454700855FFB21 /* plexiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "plexiOS-prefix.pch"; sourceTree = "<group>"; };
+		F3E2152EE32BF46D13AE2AE514E80A58 /* plexiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "plexiOS-prefix.pch"; sourceTree = "<group>"; };
 		FF7D2E77166A136417DA2B89C670B9B9 /* Reachability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3FAE8A17E0732CA6AFFC40370FE452A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73141686A3485767BAB069E13F62EC27 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		512B46C384AC87296327C5936256F213 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,24 +213,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F94C7F62CF9694EE1777C98D74C5A19D /* Frameworks */ = {
+		DFF206700486C53928BA8959B70CE83A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E90BA6192FD2D4FD844D2247C902641C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B628415A4E59485C470DF70959C8BC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BB02A2C6D834537BCDB9B4713A48AD3 /* Pod */ = {
+		04EA2B67F663CC6AB5365FD7603DAA43 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9D048E23164C771E3F8F43D1C5D25EF7 /* LICENSE */,
-				28F04C67267CA2067FD5A8215F986E91 /* plexiOS.podspec */,
-				98E9914FABC63ACC2BB20289457B060C /* README.md */,
+				C9696B5A308B2C7E47BDAB372431C054 /* plexiOS.modulemap */,
+				7616B3C2E2786143B6833EFCFFA615C5 /* plexiOS-dummy.m */,
+				13F3EA521F29B81722CB5156BA1313C0 /* plexiOS-Info.plist */,
+				F3E2152EE32BF46D13AE2AE514E80A58 /* plexiOS-prefix.pch */,
+				3F914014C6C29427C16352DF358D722C /* plexiOS-umbrella.h */,
+				07E6CF0248A3662C0A91C2EDE9F5D908 /* plexiOS.debug.xcconfig */,
+				52A16A5C5672D97D983D4FCA0AAEE6C1 /* plexiOS.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/plexiOS";
 			sourceTree = "<group>";
 		};
 		144C23D5A958D08C4C9A8DF47BA27B31 /* Products */ = {
@@ -254,19 +259,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F60235F7FFF27FEE2B8650DD1034BFB /* Support Files */ = {
+		3E8A4CAF34D43FBCE902FFD5479AE6FA /* plexiOS */ = {
 			isa = PBXGroup;
 			children = (
-				76BF2B5EA16E44204373BC994332160E /* plexiOS.modulemap */,
-				A9B41E4547A086E8459B5DEAB9B4DB81 /* plexiOS-dummy.m */,
-				6A94C0C89BB6D5FDF7260AFE2BAA3FA6 /* plexiOS-Info.plist */,
-				FF5C77F9816065E99A454700855FFB21 /* plexiOS-prefix.pch */,
-				933CA05F05B9DE437C759110993DD4BB /* plexiOS-umbrella.h */,
-				B03A29FC8F57F429666896F0A4D3128E /* plexiOS.debug.xcconfig */,
-				8E6D66853377D9B0BCED8F8F036C8519 /* plexiOS.release.xcconfig */,
+				C19B9CAF33DF47120BA418B360E2B008 /* PlexLog.swift */,
+				7E5DB475F6B043ABE82AF0A3CFC0FD47 /* PlexManager.swift */,
+				E4BF25C617557F7FE9B0459CA1BEF9FC /* PlexMessage.swift */,
+				74A482C839E0DB609CB14721E0189C01 /* PlexTCPService.swift */,
+				92AF2C0F7ABE1FC6A24A2F11B1B999F5 /* Pod */,
+				04EA2B67F663CC6AB5365FD7603DAA43 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/plexiOS";
+			name = plexiOS;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		44491C47780AE27AB97A0F96314B0ED9 /* Targets Support Files */ = {
@@ -304,20 +308,6 @@
 			path = "../Target Support Files/CocoaAsyncSocket";
 			sourceTree = "<group>";
 		};
-		6B3F43ABCCA74B9D1925DF59718CF268 /* plexiOS */ = {
-			isa = PBXGroup;
-			children = (
-				2B8E0791C4A1EF70BFB60DC793A28F0C /* PlexManager.swift */,
-				E3736D70242660E37DA58580F7C947E2 /* PlexMessage.swift */,
-				A9045E502C2C082700A11A89 /* PlexLog.swift */,
-				DCFBF255E516D73D2DA07255023AE86F /* PlexTCPService.swift */,
-				0BB02A2C6D834537BCDB9B4713A48AD3 /* Pod */,
-				3F60235F7FFF27FEE2B8650DD1034BFB /* Support Files */,
-			);
-			name = plexiOS;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		77FCD4962DE86E4085BD1E4469D8921E /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +317,7 @@
 				080011ACF63D6B83147BBAA6BBE73200 /* GCDAsyncUdpSocket.m */,
 				65D1C9B3C93C383BD28BDBC77F30E21F /* Support Files */,
 			);
+			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -338,7 +329,18 @@
 				B1B5F9BF2AFC7DF0787176D4DA1652D8 /* Resources */,
 				CB4E4B63A673E2E2AA9CFDA9405252EC /* Support Files */,
 			);
+			name = Reachability;
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		92AF2C0F7ABE1FC6A24A2F11B1B999F5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9EC11918E1F991AA57B45BF66AE75600 /* LICENSE */,
+				505AA2BD19A1E0C891DAE4422A7D8141 /* plexiOS.podspec */,
+				9AF78BE58B42FB9A206C65BE4396F1BB /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		956F5149C86EF9D2ED955651C53674CB /* YYModel */ = {
@@ -351,6 +353,7 @@
 				420DF89F758A246ED86F93BFA4026081 /* YYModel.h */,
 				9629BD8EF0B3848D15B89C6F53B7C7D7 /* Support Files */,
 			);
+			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -412,14 +415,6 @@
 			path = "Target Support Files/Pods-plexiOS_Example";
 			sourceTree = "<group>";
 		};
-		BE2BB43A60D6E4B29B6E08C9FE0579CC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6B3F43ABCCA74B9D1925DF59718CF268 /* plexiOS */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CB4E4B63A673E2E2AA9CFDA9405252EC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,12 +435,20 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BE2BB43A60D6E4B29B6E08C9FE0579CC /* Development Pods */,
+				DEAED74B13C4C0693718D9D1144B4C9C /* Development Pods */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
 				A87EF23938E8BC8C36C4FD31CD56010F /* Pods */,
 				144C23D5A958D08C4C9A8DF47BA27B31 /* Products */,
 				44491C47780AE27AB97A0F96314B0ED9 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		DEAED74B13C4C0693718D9D1144B4C9C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E8A4CAF34D43FBCE902FFD5479AE6FA /* plexiOS */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,11 +492,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C37CDD0425D62A64F60663A99ABF8A20 /* Headers */ = {
+		B120BC2199A18D49528D080FA9442050 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58ED1F12E5C11B75284BFE58090C625A /* plexiOS-umbrella.h in Headers */,
+				64AA4AB480F179CBF45331F6C6D08B27 /* plexiOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,10 +515,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				5A38CB12EC74BC6E1E02CF0F3ABDE304 /* PBXTargetDependency */,
-				D6D39E447CE5CA6BFB1A95D6E6BA3F09 /* PBXTargetDependency */,
-				4E09806A27B0FFF36DA5AC4CABBF1CAD /* PBXTargetDependency */,
-				633A833737ADAD2841266B2F2C25FF99 /* PBXTargetDependency */,
+				32DF498B21777B6A3B4AC28C802555E0 /* PBXTargetDependency */,
+				DCCED6514A90621F474A6BCE3E2B1698 /* PBXTargetDependency */,
+				3A8F27BE2DFB830D172C889AF0AB8086 /* PBXTargetDependency */,
+				A13B5CBFDE0453FA054CD8C370B8021D /* PBXTargetDependency */,
 			);
 			name = "Pods-plexiOS_Example";
 			productName = Pods_plexiOS_Example;
@@ -560,19 +563,19 @@
 		};
 		944BA35E5D9EFBB4C65957B699260A17 /* plexiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 839C81945F5334CCDAB07302D09A578D /* Build configuration list for PBXNativeTarget "plexiOS" */;
+			buildConfigurationList = 484A7BD361094CE9C94FDFE10AA63C51 /* Build configuration list for PBXNativeTarget "plexiOS" */;
 			buildPhases = (
-				C37CDD0425D62A64F60663A99ABF8A20 /* Headers */,
-				6599C456FE8B8FBD889096FDE2E6F86E /* Sources */,
-				3FAE8A17E0732CA6AFFC40370FE452A0 /* Frameworks */,
-				4FF351876BBC920445D8A1DB405CF7A7 /* Resources */,
+				B120BC2199A18D49528D080FA9442050 /* Headers */,
+				5C697D978CE60C11EE8573D3317D398A /* Sources */,
+				E90BA6192FD2D4FD844D2247C902641C /* Frameworks */,
+				9DB7A0EAF12C584F1A412043502E5F67 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				97DB3A2A4A22502DBD1606902D505A77 /* PBXTargetDependency */,
-				A0ADA4A4E69A49C6B0D91A3B335F5917 /* PBXTargetDependency */,
-				DB800C4707824B9F0AD2B82BFD860AAC /* PBXTargetDependency */,
+				F175F60266DDF6387898219CF921610B /* PBXTargetDependency */,
+				B4E03A13A69DD0E885099C3B9297B202 /* PBXTargetDependency */,
+				ED740C60D4A029AE17A374FBBE67A1CA /* PBXTargetDependency */,
 			);
 			name = plexiOS;
 			productName = plexiOS;
@@ -591,7 +594,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9DF0688EB44DAAE27852D23775C63834 /* PBXTargetDependency */,
+				B1E76C40D20672DCD7AA36541A0E1AC4 /* PBXTargetDependency */,
 			);
 			name = Reachability;
 			productName = Reachability;
@@ -600,11 +603,11 @@
 		};
 		D2787856C227A709315E3C9C4355A440 /* Reachability-Reachability_Privacy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79D2680377B37FF8A0F1E82256B608DF /* Build configuration list for PBXNativeTarget "Reachability-Reachability_Privacy" */;
+			buildConfigurationList = 20230D391C1692D4EBA83A62EF9D9B9D /* Build configuration list for PBXNativeTarget "Reachability-Reachability_Privacy" */;
 			buildPhases = (
-				E9CFE32F4BD352801C610E411DCF85D0 /* Sources */,
-				F94C7F62CF9694EE1777C98D74C5A19D /* Frameworks */,
-				AED7CC9B9B25B2BA6D692A40CEFC7567 /* Resources */,
+				59A963D873C48624E4B13A84A7DC7788 /* Sources */,
+				DFF206700486C53928BA8959B70CE83A /* Frameworks */,
+				9C7EA9DF7FF7C7177D24BADBEE73426A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -662,13 +665,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FF351876BBC920445D8A1DB405CF7A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8A8BCE0542BF8F6B6D2FD9A83D1B9B6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -677,11 +673,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AED7CC9B9B25B2BA6D692A40CEFC7567 /* Resources */ = {
+		9C7EA9DF7FF7C7177D24BADBEE73426A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EB2A2C15E87A8FB4F8C0CB2E13CA716 /* PrivacyInfo.xcprivacy in Resources */,
+				7FDD64D358AAC338BBD817E616B22939 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB7A0EAF12C584F1A412043502E5F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,15 +698,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6599C456FE8B8FBD889096FDE2E6F86E /* Sources */ = {
+		59A963D873C48624E4B13A84A7DC7788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C616DCE89093F3E6595E5FAC0BB8ECA1 /* plexiOS-dummy.m in Sources */,
-				4DD273D0FA76B95E253D54E44688EA55 /* PlexManager.swift in Sources */,
-				AA4F5F3D3EA4A0A4A41EF5A75DA59114 /* PlexMessage.swift in Sources */,
-				A9045E512C2C082700A11A89 /* PlexLog.swift in Sources */,
-				A6B568E8E82F0A9801DE9D727D36C5C8 /* PlexTCPService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C697D978CE60C11EE8573D3317D398A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6240561F25E45E7A9363337AF5798A /* plexiOS-dummy.m in Sources */,
+				01B0C64F6944D4297808D299404F7DF0 /* PlexLog.swift in Sources */,
+				460C7787977E17B25AC3B80DCD9D1EB0 /* PlexManager.swift in Sources */,
+				B9566EAFA7AC8D23EBAA3CA63963B7B8 /* PlexMessage.swift in Sources */,
+				B40988B374C0960E8DEB46C5F097FD73 /* PlexTCPService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,67 +754,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9CFE32F4BD352801C610E411DCF85D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4E09806A27B0FFF36DA5AC4CABBF1CAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YYModel;
-			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
-			targetProxy = DF9ACC81D5AEA00EB0D0D3C1D9C2EF07 /* PBXContainerItemProxy */;
-		};
-		5A38CB12EC74BC6E1E02CF0F3ABDE304 /* PBXTargetDependency */ = {
+		32DF498B21777B6A3B4AC28C802555E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
-			targetProxy = 8FE291E53C3157A2983E340669AC9642 /* PBXContainerItemProxy */;
+			targetProxy = C883F837FDA52F9DA45989E9DAE4E4D9 /* PBXContainerItemProxy */;
 		};
-		633A833737ADAD2841266B2F2C25FF99 /* PBXTargetDependency */ = {
+		3A8F27BE2DFB830D172C889AF0AB8086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = EB7488933DC0A61F211B4F7FED857A5B /* PBXContainerItemProxy */;
+		};
+		A13B5CBFDE0453FA054CD8C370B8021D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = plexiOS;
 			target = 944BA35E5D9EFBB4C65957B699260A17 /* plexiOS */;
-			targetProxy = DB85795B56C59F8E7DD5A69BA4C05CD8 /* PBXContainerItemProxy */;
+			targetProxy = B99A318377E0FEDAFC0CCF69AFD30113 /* PBXContainerItemProxy */;
 		};
-		97DB3A2A4A22502DBD1606902D505A77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaAsyncSocket;
-			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
-			targetProxy = AFD294A6C051AF39297A1BB39C3E1B40 /* PBXContainerItemProxy */;
-		};
-		9DF0688EB44DAAE27852D23775C63834 /* PBXTargetDependency */ = {
+		B1E76C40D20672DCD7AA36541A0E1AC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Reachability-Reachability_Privacy";
 			target = D2787856C227A709315E3C9C4355A440 /* Reachability-Reachability_Privacy */;
-			targetProxy = FC997C38CBE676D805B957B8AFB229E0 /* PBXContainerItemProxy */;
+			targetProxy = 4890622960A375BE5A87B6AB154A9BEA /* PBXContainerItemProxy */;
 		};
-		A0ADA4A4E69A49C6B0D91A3B335F5917 /* PBXTargetDependency */ = {
+		B4E03A13A69DD0E885099C3B9297B202 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Reachability;
 			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
-			targetProxy = B0057B8049140DC75B0D2547F324AC40 /* PBXContainerItemProxy */;
+			targetProxy = 63711449B1C5CE62D02FABE737F186DD /* PBXContainerItemProxy */;
 		};
-		D6D39E447CE5CA6BFB1A95D6E6BA3F09 /* PBXTargetDependency */ = {
+		DCCED6514A90621F474A6BCE3E2B1698 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Reachability;
 			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
-			targetProxy = 62CA88AE923DA251ED0E0821BF0E17FA /* PBXContainerItemProxy */;
+			targetProxy = 05B1DFB6E6C28D2C883C3355A4BC98C4 /* PBXContainerItemProxy */;
 		};
-		DB800C4707824B9F0AD2B82BFD860AAC /* PBXTargetDependency */ = {
+		ED740C60D4A029AE17A374FBBE67A1CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YYModel;
 			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
-			targetProxy = 2CE14925259C487556C2277C77889EF1 /* PBXContainerItemProxy */;
+			targetProxy = 0F7B7021EF8E6AF3EDDB98B6E752434B /* PBXContainerItemProxy */;
+		};
+		F175F60266DDF6387898219CF921610B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = BA897C53046295CD30CBBFE6583F02A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0922798C969F650C75C18CA7218BEA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7D2E77166A136417DA2B89C670B9B9 /* Reachability.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Reachability";
+				IBSC_MODULE = Reachability;
+				INFOPLIST_FILE = "Target Support Files/Reachability/ResourceBundle-Reachability_Privacy-Reachability-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Reachability_Privacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		0F871ED99C00388168301CC3DF92A60F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF10B6B611994A075334E34F7EA338DE /* Pods-plexiOS_Example.release.xcconfig */;
@@ -837,23 +857,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		12616E378C94474DE1BF72C8186246FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF7D2E77166A136417DA2B89C670B9B9 /* Reachability.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Reachability";
-				IBSC_MODULE = Reachability;
-				INFOPLIST_FILE = "Target Support Files/Reachability/ResourceBundle-Reachability_Privacy-Reachability-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Reachability_Privacy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -923,9 +926,9 @@
 			};
 			name = Debug;
 		};
-		3D5DFDBB412324457C14C396B950764D /* Debug */ = {
+		3AB16842C58F8CD9BA4BEBC145C393B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C790031091DE803708458F1E194E74F /* CocoaAsyncSocket.debug.xcconfig */;
+			baseConfigurationReference = 6097C9B4583BA083866B4B3F94C972B7 /* CocoaAsyncSocket.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -947,14 +950,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		5C32A7AB43450168B97A85A5D2F26399 /* Debug */ = {
+		3AE62A9AD17A2E484ADF9F13B6111679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB2BC9242F601283E5D5087D27904F8A /* YYModel.debug.xcconfig */;
 			buildSettings = {
@@ -978,12 +982,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		47B4B367E3665497B19FD6C638A17AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84AD49B5F2DE2921A3828C75200AB27D /* YYModel.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1040,15 +1076,16 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		7702876F51A77D81D3A52880ACD67B46 /* Release */ = {
+		6CBBD9BEF1333E5B4B4DB0558B04CA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E6D66853377D9B0BCED8F8F036C8519 /* plexiOS.release.xcconfig */;
+			baseConfigurationReference = 07E6CF0248A3662C0A91C2EDE9F5D908 /* plexiOS.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1071,13 +1108,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		800AB45B4101C3130C2885947FC8A5AF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1145,6 +1181,54 @@
 			};
 			name = Debug;
 		};
+		A9157D94A28374AEEDE02883CA14F0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2523DF14412473ABC7E94C4A6CC5D63 /* Reachability.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Reachability";
+				IBSC_MODULE = Reachability;
+				INFOPLIST_FILE = "Target Support Files/Reachability/ResourceBundle-Reachability_Privacy-Reachability-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Reachability_Privacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AC84BA2111D37185774CF4F952FCBBEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C790031091DE803708458F1E194E74F /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B64D66A40D275F057B5EF2E545D885DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF7D2E77166A136417DA2B89C670B9B9 /* Reachability.release.xcconfig */;
@@ -1178,73 +1262,9 @@
 			};
 			name = Release;
 		};
-		B9EAF49A0A48820833CCF489D6215BEC /* Release */ = {
+		C40B6B50AEA7036C7EF5BC64DA799B0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6097C9B4583BA083866B4B3F94C972B7 /* CocoaAsyncSocket.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
-				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
-				PRODUCT_NAME = CocoaAsyncSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C13E2B39C000A004543D96E426F77980 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84AD49B5F2DE2921A3828C75200AB27D /* YYModel.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
-				PRODUCT_MODULE_NAME = YYModel;
-				PRODUCT_NAME = YYModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D1D7AB667F0A2A1FD18C8DCEED3BAB4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B03A29FC8F57F429666896F0A4D3128E /* plexiOS.debug.xcconfig */;
+			baseConfigurationReference = 52A16A5C5672D97D983D4FCA0AAEE6C1 /* plexiOS.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1267,33 +1287,26 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		F1988A679153777099CA476698FA9D30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2523DF14412473ABC7E94C4A6CC5D63 /* Reachability.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Reachability";
-				IBSC_MODULE = Reachability;
-				INFOPLIST_FILE = "Target Support Files/Reachability/ResourceBundle-Reachability_Privacy-Reachability-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Reachability_Privacy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		20230D391C1692D4EBA83A62EF9D9B9D /* Build configuration list for PBXNativeTarget "Reachability-Reachability_Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9157D94A28374AEEDE02883CA14F0C8 /* Debug */,
+				0922798C969F650C75C18CA7218BEA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B0D5D6DCE88466D51EFA57B6B394168 /* Build configuration list for PBXNativeTarget "Reachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1312,20 +1325,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79D2680377B37FF8A0F1E82256B608DF /* Build configuration list for PBXNativeTarget "Reachability-Reachability_Privacy" */ = {
+		484A7BD361094CE9C94FDFE10AA63C51 /* Build configuration list for PBXNativeTarget "plexiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1988A679153777099CA476698FA9D30 /* Debug */,
-				12616E378C94474DE1BF72C8186246FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		839C81945F5334CCDAB07302D09A578D /* Build configuration list for PBXNativeTarget "plexiOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1D7AB667F0A2A1FD18C8DCEED3BAB4C /* Debug */,
-				7702876F51A77D81D3A52880ACD67B46 /* Release */,
+				6CBBD9BEF1333E5B4B4DB0558B04CA95 /* Debug */,
+				C40B6B50AEA7036C7EF5BC64DA799B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1342,8 +1346,8 @@
 		B0A95C19FCB7B5FAAC46BE001C359756 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D5DFDBB412324457C14C396B950764D /* Debug */,
-				B9EAF49A0A48820833CCF489D6215BEC /* Release */,
+				AC84BA2111D37185774CF4F952FCBBEE /* Debug */,
+				3AB16842C58F8CD9BA4BEBC145C393B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1351,8 +1355,8 @@
 		C4491A1839789B11EAB3061804D2ABF5 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C32A7AB43450168B97A85A5D2F26399 /* Debug */,
-				C13E2B39C000A004543D96E426F77980 /* Release */,
+				3AE62A9AD17A2E484ADF9F13B6111679 /* Debug */,
+				47B4B367E3665497B19FD6C638A17AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

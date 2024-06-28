@@ -166,7 +166,6 @@ import Reachability
                     self.connent()
                 }
             }else{
-                
                 PlexLog.showError("服务器IP或端口错误")
                 self.connectionStatusValue = .None
             }
@@ -186,7 +185,10 @@ import Reachability
             if let tcp = self.tcpService {
                 tcp.disconnect()
             }
+            self.tcpService = nil
             self.isAuthSuccess = false
+            self.stopTimer()
+            self.connectionStatusValue = .None
         }
     }
     
@@ -202,6 +204,49 @@ import Reachability
         }
     }
     
+    // MARK: - Timer
+    
+    /// 定时器
+    private var timer:Timer?
+    
+    private func startTimer(){
+        self.stopTimer()
+        //TODO: 配置
+        self.timer = Timer.init(timeInterval: 60.0, repeats: true, block: { [weak self]timer in
+            if let strongSelf = self{
+                strongSelf.timerRun()
+            }
+        })
+        RunLoop.main.add(self.timer!, forMode: .default)
+        self.timer?.fire()
+    }
+    
+    private func stopTimer(){
+        if(self.timer != nil){
+            self.timer?.invalidate()
+            self.timer = nil
+        }
+    }
+    
+    private func timerRun(){
+        sendHeartbeatMessage()
+    }
+    
+
+    
+    
+}
+
+extension PlexManager {
+    private func sendHeartbeatMessage(){
+        let heartbeat = PlexMessage.heartbeat()
+        self.tcpService?.sendMessage(heartbeat)
+    }
+    
+    private func sendAuthMessage(){
+        let auth = PlexMessage.authServer(body: self.authBody)
+        self.tcpService?.sendMessage(auth)//发送认证消息
+    }
 }
 
 extension PlexManager: PlexTCPServiceDelegate {
@@ -210,10 +255,8 @@ extension PlexManager: PlexTCPServiceDelegate {
     func tcpConnected(_ tcp: PlexTCPService, toServer server: String, port: UInt16) {
         PlexLog.showInfo("服务器连接成功 ->\(server):\(port)")
         self.connectionStatusValue = .Connected
-//        let heartbeat = PlexMessage.heartbeat()
-//        tcp.sendMessage(heartbeat)
-        let auth = PlexMessage.authServer(body: self.authBody)
-        tcp.sendMessage(auth)//发送认证消息
+        sendHeartbeatMessage()
+        sendAuthMessage()
     }
     
     func tcpConnectFail(_ tcp: PlexTCPService, withError error: (any Error)?) {
@@ -223,7 +266,11 @@ extension PlexManager: PlexTCPServiceDelegate {
     
     func tcpDisconnect(_ tcp: PlexTCPService, withError error: (any Error)?) {
         PlexLog.showInfo("断开连接:\(error?.localizedDescription ?? "")")
-        self.connectionStatusValue = .Disconnected
+        if self.tcpService != nil {
+            self.connectionStatusValue = .Disconnected
+        }else{
+            self.connectionStatusValue = .None
+        }
     }
     
     func tcpSendSuccess(_ tcp: PlexTCPService, withMessage message: PlexMessage) {
@@ -256,9 +303,19 @@ extension PlexManager {
         if Reachability.forInternetConnection().currentReachabilityStatus() == .ReachableViaWWAN {
             NSLog("Plex-InternetConnection移动蜂窝")
             self.internetStatus = .WWAN
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                if self.connectionStatus != .None {
+                    self.reconnect()
+                }
+            }
         }else if Reachability.forInternetConnection().currentReachabilityStatus() == .ReachableViaWiFi {
             NSLog("Plex-InternetConnection无线网络")
             self.internetStatus = .WiFi
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                if self.connectionStatus != .None {
+                    self.reconnect()
+                }
+            }
         }else if  Reachability.forInternetConnection().currentReachabilityStatus() == .NotReachable {
             NSLog("Plex-InternetConnection无网络")
             self.internetStatus = .NoConnect
